@@ -1,0 +1,62 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .title{
+        @apply w-44 h-4 m-2 bg-purple-900 rounded-md text-white;
+    }
+
+    td {
+        @apply text-center;
+    }
+
+    input {
+        @apply w-44 p-1 rounded-md focus:outline-none focus:border-purple-900 focus:border-2 text-black mr-2
+    }
+
+    select {
+        @apply p-1 rounded-md focus:outline-none focus:border-purple-900 focus:border-2 text-black
+    }
+
+    button {
+        @apply px-2 py-1 rounded-md text-white
+    }
+
+    .button {
+        @apply px-2 py-1 rounded-md text-white cursor-pointer
+    }
+
+    i {
+        @apply mr-1
+    }
+
+    .button-filter{
+        @apply w-52 mt-4 mr-3 bg-purple-900
+    }
+
+    .button-filter-highlighted{
+        @apply w-52 mt-4 mr-3 bg-purple-400
+    }
+
+    .filter{
+        @apply flex row-auto justify-center
+    }
+    table{
+        @apply px-6 py-4  text-white
+    }
+
+    .contenedor{
+        @apply bg-purple-600 bg-opacity-80 rounded-lg border-purple-900 text-white
+    }
+}
+
+body{
+    background-image: url(/img/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
